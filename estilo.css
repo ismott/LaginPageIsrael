@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.conteiner{
+    width: 1200px;
+    /* background-color: blue;  */
+    margin: 0 auto;
+}
+
+
+header{
+    background-color: #F9003D;
+    height: 60px; 
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0px;
+        
+}
+
+
+.cont_heder{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+
+.nav_header{
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+    width: 590px;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center
+}
+
+
+.nav_header a{
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* ---------------------MAIN------------------------ */
+main{
+    margin-top: 60px;
+}
+
+.conteiner_baner{
+    position: relative;
+    height: 920px;
+}
+
+
+.baner_img{
+    width: 100%;
+}
+
+
+.bloco_baner{
+    position: absolute;
+    top: 226px;
+    left: 121px;
+    display: flex;
+    flex-direction: column;    
+}
+
+
+.bloco_baner h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 96px;
+    font-weight: 400;
+    color: #fff;
+    width: 545px;
+    font-style: normal;
+    /* background-color: aqua; */
+}
+
+
+hr{
+    border: 1px solid #FFAF00;
+}
+
+
+.senai{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 53px;
+    line-height: 60px;
+    color: #F9003D;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+
+.mouse{
+    width: 37px;
+    height: 80px;
+}
+
+/* ---------------------SECTION 2-------------------- */
+.box_sobre{
+    background-color: #080324;
+    height: 800px;
+}
+
+
+.conteiner_conteudo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+}
+
+
+.conteiner_conteudo h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    line-height: 77px;
+    font-weight: 400;
+    color: #F9003D;
+}
+
+
+.bloco_imgpar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.participantes{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.participantes span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    color: #FFAF00;
+    width: 557px;
+}
+
+
+.participantes p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    width: 592px;
+}
+/* -------------------section 3--------------------- */
+
+.info{
+    background-image: url(../sla/imagem-fundo-info.png);
+}
+
+.conteiner_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 197px;
+}
+
+.info h2{
+    font-family: 'Courier New', Courier, monospace;
+    width: 288px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.info span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #A259F7;
+    width: 213px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.box{
+    border: 1px solid #A259F7;
+    width: 289px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* -------------------section 4--------------------- */
+
+.endereco{
+    background-image: url(../sla/imagem-fundo-endereco.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 516px;
+    position: relative;
+}
+
+
+.endereco p{
+    font-family: 'Courier New', Courier, monospace;
+    width: 435px;
+    font-size: 24px;
+    color: #A259F7;
+}
+
+
+.conteiner_endereco{
+
+}
+
+.endereco h2{
+    font-family: 'Bebas Neue', cursive;
+    width: 900px;
+    font-size: 64px;
+    color: #FFAF00;
+    font-weight: 400;
+    /* background-color: aqua; */
+}
+
+
+.box_alma{
+    background-color: #010101;
+    border: 2px solid #340B65;
+    width: 899px;
+    height: 203px;
+}
+
+
+.img_endereco{
+    position: absolute;
+    top: 125px;
+    right: 530px;
+
+}
+/* -------------------FOOTER------------------------ */
+
+footer{
+    width: 1920px;
+    height: 82px;
+    background-color: #F9003D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer span{
+    width: 393px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
