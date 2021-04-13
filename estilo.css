@@ -59,7 +59,7 @@ main{
 
 .conteiner_baner{
     position: relative;
-    height: 920px;
+    height: 780px;
 }
 
 
@@ -279,5 +279,82 @@ footer span{
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
+/* -----------------RESPONSIVIDADE--------------------- */
 
+@media (max-width:420px){
+    .conteiner{
+        width: 80vw;
+    }
+    .conteiner_baner{
+        display: flex;
+        justify-content: center;
+        height: 653px;
+    }
 
+    .baner_img{
+        height: 100%;
+        width: auto;
+    }
+
+    .bloco_baner{
+        left: 1%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bloco_baner h1{
+        width: 84%;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    hr{
+        width: 84%;
+        margin: 20px 0;
+    }
+
+    .senai{
+        font-size: 31px;
+        margin-top: 10px;
+    }
+
+    .mouse{
+        width: 45px;
+        margin-top: 20px;
+    }
+
+    /* ------------------SECTION 2--------------------------------------- */
+    .box_sobre{
+        height: auto;
+    }
+
+    .conteiner_conteudo h2{
+        font-size: 3.5em;
+        margin: 50px 0;
+    }
+
+    .bloco_imgpar{
+        flex-direction: column;
+    }
+
+    .img_sobre{
+        width: 80vw;
+    }
+
+    .participantes span{
+        font-size: 1.5em;
+        margin: 50px 0;
+    }
+
+    h3{
+        width: auto;
+        font-size: 2.3em;
+        margin-bottom: 50px;
+    }
+
+    .participantes p{
+        width: auto;
+        text-align: justify;
+        padding-bottom: 50px;
+    }
+}   
