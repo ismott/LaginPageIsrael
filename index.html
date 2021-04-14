@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lading page</title>
+    <script src="https://kit.fontawesome.com/023bfb8482.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css">
 </head>
 
@@ -13,16 +14,19 @@
     <!-- ----------------------------------------------------HEADER--------------------------------------------------->
     <header>
         <div class="conteiner cont_heder">
-            <nav class="nav_header">
+            <nav id="links" class="nav_header" onclick="BotaoMuenu()">
                 <a href="#conteiner_baner">inicio</a>
                 <a href="#box_sobre">sobre</a>
                 <a href="#info">desafio</a>
                 <a href="#endereco">endereço</a>
             </nav>
+            <a class="btn_bars" href="#" onclick="BotaoMuenu()">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
     </header>
         <!-- --------------------------------------------MAIN--------------------------------------------------------->
-    <main>
+    <main onclick="BotaoMuenu()">
         <!-- --------------------------------------------section 2---------------------------------------------------->
         <section id="conteiner_baner" class="conteiner_baner">
             <img class="baner_img" src="imagem-fundo-banner.png" alt="">
@@ -80,7 +84,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- ------------------------------------SECTION 5-------------------------------------------------------- -->
         <section id="endereco" class="endereco">
             <h2>endereço:</h2>
             <div class="box_alma">
@@ -96,6 +100,20 @@
     <footer>
             <span>Copyright © 2020 - Escola Senai de Informática</span>
     </footer>
+
+    <script>
+        function BotaoMuenu(){
+            var menu = document.getElementById("links");
+            if (menu.style.display === "flex") {
+                // esconder menu
+                menu.style.display = "none";
+            } else{
+                // mostrar menu
+                menu.style.display = "flex";
+            }  
+            
+        }
+    </script>
 </body>
 
 </html>
